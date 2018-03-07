@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<string.h>
 int main(void)
@@ -13,7 +12,9 @@ for(i=0;i<k;i++)
 {
 for(j=i+1;j<k;j++)
 {
- {
+	
+            if(ch[i]>ch[j])
+            {
                 temp=ch[i];
                 ch[i]=ch[j];
                 ch[j]=temp;
@@ -24,4 +25,3 @@ for(j=i+1;j<k;j++)
 printf("%s",ch);
 	return 0;
 }
-© 2018 GitHu
