@@ -1,27 +1,25 @@
-#include<stdio.h>
-#include<string.h>
-int main(void)
 
+#include <stdio.h>
+void main()
 {
-char ch[100];
-char temp;
-gets(ch);
-int i,k,j;
-k=strlen(ch);
-for(i=0;i<k;i++)
+char a[100],b[100];
+int i,j,k;
+printf("enter");
+scanf("%d",&a);
+int len=strlen(a);
+for(i=0;i<len;i++)
 {
-for(j=i+1;j<k;j++)
-{
-	
-            if(ch[i]>ch[j])
-            {
-                temp=ch[i];
-                ch[i]=ch[j];
-                ch[j]=temp;
+    for(j=i+1;j<len;j++)
+    {
+        if(a[i]>a[j])
+        {
+            b[k]=a[i];
+            a[i]=a[j];
+            a[j]=b[k];
+        }
+    }
+    
 }
-
-}
-}
-printf("%s",ch);
-	return 0;
+for(i=0;i<len;i++)
+printf("%s",a[i]);
 }
